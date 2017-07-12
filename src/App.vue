@@ -37,7 +37,7 @@ export default {
     sendReqPokeNum: _.debounce(function(){
       const vm = this
       vm.pokeRes = 'buscando...'
-      axios.get("http://pokeapi.co/api/v2/pokemon/" + vm.pokeNum)
+      axios.get("https://pokeapi.co/api/v2/pokemon/" + vm.pokeNum)
             .then(function(response) {
               let res = response.data
               vm.pokeRes = res.name
