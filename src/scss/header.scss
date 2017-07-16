@@ -1,0 +1,12 @@
+.header-container {
+  background-color: $blue;
+  .header-urls {
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: none;
+        color: $blue-very-light;
+      }
+    }
+  }
+}
