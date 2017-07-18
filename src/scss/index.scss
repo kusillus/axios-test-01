@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 @import "./colors";
 @import "./header";
-@import "./checkboxs";
 
 #app {
   font-family: 'Titillium Web', sans-serif;
@@ -13,37 +12,62 @@
   margin-top: 60px;
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-
 .principal-img {
-  max-width: 200px;
+  max-width: 200px   ;
 }
-.box-dex {
-  background-color: #d8e5ea;
-  border-radius: 2px;
+.header-principal {
+  h3 {
+    line-height: .8;
+    margin: 0;
+  }
+  span {
+    color: $white-dark;
+    line-height: 1;
+    margin: 0;
+  }
 }
-.poke-sub {
-  font-size: .9rem;
-  color: gray;
+
+.checkboxs-container {
+  background-color: $blue;
+  border-radius: 4px;
+  color: $white;
 }
-.poke-res {
-  color: orange;
-  font-size: 2rem;
-  line-height: 1;
+input[type="radio"]:checked + label{
+  background-color: orange;
+}
+
+.info-query {
+  border-top: solid .1rem $white-lite;
+  .q-title{
+    line-height: 1;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .q-query {
+    background-color: $blue-dark;
+    color: $white;
+    border-radius: 4px;
+    padding: .5rem .1rem;
+  }
+}
+.btn-submit {
+  background-color: $blue;
+  color: $white;
+  &:hover {
+    background-color: $blue-light
+  }
+}
+.result-query-container {
+  background-color: $blue-lite;
+  border-radius: 4px;
+  .poke-sub {
+    color: $blue-very-dark;
+    font-size: 1.3rem;
+  }
+  .result-query {
+    .poke-res {
+      color: $white;
+      font-size: 1.5rem;
+    }
+  }
 }
